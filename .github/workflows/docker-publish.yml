@@ -39,4 +39,4 @@ jobs:
           docker push ghcr.io/$OWNER/$IMAGE_NAME:latest
         env:
           OWNER: ${{ github.actor }}
-          IMAGE_NAME: ${{ first_docker_published }}
+          IMAGE_NAME: first_docker_published
