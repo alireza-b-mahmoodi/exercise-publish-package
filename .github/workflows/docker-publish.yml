@@ -37,6 +37,7 @@ jobs:
           docker build ./sample-packages/docker --tag ghcr.io/$OWNER/$IMAGE_NAME:latest
           docker run ghcr.io/$OWNER/$IMAGE_NAME:latest
           docker push ghcr.io/$OWNER/$IMAGE_NAME:latest
+          echo "This is for debuging: github.actro = $OWNER"
         env:
           OWNER: ${{ github.actor }}
           IMAGE_NAME: first_docker_published
